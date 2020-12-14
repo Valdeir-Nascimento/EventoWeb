@@ -1,9 +1,11 @@
-package com.eventoweb.eventoweb;
+package com.eventoweb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan({"com.eventoweb.controller"})
 public class EventowebApplication {
 
 	public static void main(String[] args) {
